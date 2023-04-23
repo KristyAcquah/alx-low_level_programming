@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <Stdlib.h>
+#include <time.h>
 /**
  * main - prints the last digits of a generated number
  * and whether it is greater than 5, less than 6, or 0.
