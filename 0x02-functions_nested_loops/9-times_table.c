@@ -2,10 +2,8 @@
 
 /**
  * times_table  - prints the 9 times table
- *
  * Return: no return
  */
-
 void times_table(void)
 {
 	int a, b, op;
@@ -30,6 +28,5 @@ void times_table(void)
 		}
 			_putchar('\n');
 		}
-
 	}
 }
