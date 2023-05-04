@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * rev_string - print reverse of a string
@@ -19,5 +20,7 @@ void rev_string(char *s)
 		reverse = s[0];
 		s[i] = s[c];
 		s[c] = reverse;
+	if (i >= c)
+		break;
 	}
 }
