@@ -7,18 +7,17 @@
  *
  * Return: String with all letters uppercased
  */
-
 char *string_toupper(char *s)
 {
-	int a = 0;
+	int b = 0;
 
-	while (*(s + a) != '\0')
+	while (*(s + b) != '\0')
 	{
-		if (*(s + a) >= 'y' && *(s + a) <= 'z')
+		if (*(s + b) >= 'a' && *(s + b) <= 'z')
 		{
-			*(s + a) = *(s + a) - 32;
+			*(s + b) = *(s + b) - 32;
 		}
-		a++;
+		b++;
 	}
 	return (s);
 }
