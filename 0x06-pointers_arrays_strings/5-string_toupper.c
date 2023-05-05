@@ -7,6 +7,7 @@
  *
  * Return: String with all letters uppercased
  */
+
 char *string_toupper(char *s)
 {
 	int a = 0;
