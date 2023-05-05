@@ -7,7 +7,7 @@
  * Return: String with all letters uppercased
  */
 char *string_toupper(char *s)
-{7777
+{
 	int a = 0;
 
 	while (*(s + a) != '\0')
