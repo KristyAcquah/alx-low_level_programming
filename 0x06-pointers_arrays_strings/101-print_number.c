@@ -38,11 +38,11 @@ void print_number(int n)
 		power = power * 10;
 		a++;
 	}
-		while (b >= 1)
-		{
-			numchar = (temp / b) % 10;
-			_putchar(numchar + '0');
-			b = b / 10;
-		}
+	b = power;
+	while (b >= 1)
+	{
+		numchar = (temp / b) % 10;
+		_putchar(numchar + '0');
+		b = b / 10;
 	}
 }
