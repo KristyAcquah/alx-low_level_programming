@@ -3,13 +3,14 @@
 
 /**
  * print_number - print an integer number
- * @n: number to be tested
+ * @n: number tested
  * Return: Always 0
  */
 void print_number(int n)
 {
-	int a, b, digits, digit, power;
-	unsigned int temp, numchar, number;
+	int a, b, digit, digits, power;
+	unsigned int temp, numchar,
+		     number;
 
 	digit = 0;
 	if (n < 0)
@@ -34,7 +35,9 @@ void print_number(int n)
 
 	while (a < digits)
 	{
-		b = power;
+		power = power * 10;
+		a++;
+	}
 		while (b >= 1)
 		{
 			numchar = (temp / b) % 10;
