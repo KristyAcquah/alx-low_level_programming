@@ -35,4 +35,4 @@ int main(void)
     r = wildcmp("abc", "*b");
     printf("%d\n", r);
     return (0);
-
+}
