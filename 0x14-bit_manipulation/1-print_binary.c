@@ -12,9 +12,9 @@ void print_binary(unsigned long int n)
 	{
 		new = n >> x;
 
-		if (new & x)
+		if (new & 1)
 		{
-			_putchar('0');
+			_putchar('1');
 			number++;
 		}
 		else if (number == 0)
