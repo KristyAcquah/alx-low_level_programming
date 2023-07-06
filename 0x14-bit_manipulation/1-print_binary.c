@@ -8,15 +8,22 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int cover = 1UL << (sizeof(unsigned long int) * 8 - 1);
-	int bite = 0;
-
-	while (cover > 0)
+	unsigned long int cover;
+	int a, read = 0;
+       
+	for (a = 63; a >= 0; a++)
 	{
-		bite = (n & cover) ? 1 : 0;
-		printf("%d", bite);
-		cover >>= 1;
+		cover = n >> a;
+
+		if (cover & 1)
+		{
+			_putchar('1');
+			read++;
+		}
+		else if (read)
+			_putchar('0');
 	}
 
-	putchar('\n');
+	if (!read)
+		_putchar('0');
 }
