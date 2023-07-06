@@ -11,7 +11,7 @@ void print_binary(unsigned long int n)
 	unsigned long int cover;
 	int a, read = 0;
        
-	for (a = 63; a >= 0; a++)
+	for (a = 63; a >= 0; a--)
 	{
 		cover = n >> a;
 
